@@ -72,14 +72,14 @@ These are the load-bearing decisions. They belong in `program/00-governance/PPWS
    Replace the single implausible figure with **Pilot (~USD 15–40k) → Regional (~USD 80–150k) → National-ambition (USD 300k+)**. Treat the existing PKR 6.85M as a *pilot-tier* figure only.
 
 5. **Timeline realism → IRB + translation on the critical path.**
-   The 18-month Gantt is optimistic once NBC-REC + institutional IRB and forward/back-translation are included. Phase languages (**Urdu + English first**) and regions (**Karachi, Lahore, Islamabad/Rawalpindi first**), and start IRB early.
+   The 18-month Gantt is optimistic once NBC-REC + institutional IRB are included. **Launch is English-only (Decision D-0003)**, which removes translation from the critical path; phase regions (**Karachi, Lahore, Islamabad/Rawalpindi first**), and start IRB early.
 
 ---
 
 ## 4. Naming, taxonomy, and de-duplication (Phase 0 housekeeping)
 
 - **One canonical charter.** `docx.md` and `PPWS-001` duplicate the charter. Merge into a single authoritative `program/00-governance/PPWS-001-Research-Charter.md`; retire the divergence under version control.
-- **Reconcile the two domain numberings.** The charter uses **15 numbered domains**; the ontology uses **A–O**. Build one mapped taxonomy so "Domain 11" and "Domain K" never confuse a reader. Proposed mapping (to be ratified in `PPWS-000B`):
+- **Reconcile the two domain numberings.** The charter uses **15 numbered domains**; the ontology uses **A–P** (16 domains, after promoting Religious & Spiritual to its own Domain J — D-0002). One mapped taxonomy ensures "Domain 11" and "Domain K" never confuse a reader. Mapping (ratified in `PPWS-000B`):
 
   | Ontology | Domain | Charter # (closest) |
   |---|---|---|
@@ -91,15 +91,19 @@ These are the load-bearing decisions. They belong in `program/00-governance/PPWS
   | F | Professional Ecology | 2 |
   | G | Economic Ecology | 3 |
   | H | Social Ecology | 8 |
-  | I | Cultural Ecology | 9 (+10 Religious) |
-  | J | Workplace Ecology | 11 |
-  | K | Personal Agency | 12 |
-  | L | Mental Wellbeing | 13 |
-  | M | Physical Wellbeing | 14 |
-  | N | Life Satisfaction | 15 (part) |
-  | O | Future Orientation | 15 (part) |
+  | I | Cultural Ecology | 9 |
+  | **J** | **Religious & Spiritual Ecology** (new — D-0002) | **10** |
+  | K | Workplace Ecology | 11 |
+  | L | Personal Agency | 12 |
+  | M | Mental Wellbeing | 13 |
+  | N | Physical Wellbeing | 14 |
+  | O | Life Satisfaction | 15 (part) |
+  | P | Future Orientation | 15 (part) |
 
-  *Note the mismatch:* the charter's **Domain 10 (Religious Context)** has no dedicated ontology letter (currently folded into culture/identity). **⚠ needs your call** (Section 11) whether Religious Context becomes its own ontology domain.
+  *Resolved (Decision **D-0002**):* the charter's **Domain 10 (Religious Context)**
+  is now its **own ontology domain J** (Religious & Spiritual Ecology), inserted
+  after Cultural Ecology (I); former J–O shift to **K–P**. The ontology now spans
+  **16 domains, A–P**. Ratified in `PPWS-000B`; see `PPWS-000A` D-0002.
 
 - **Document ID convention:** `PPWS-<NNN><letter?>-<Short-Title>.md`. Numbers encode build order; letters encode parts/children.
 - **Status lifecycle:** `NOT STARTED → DRAFT → IN REVIEW → APPROVED → FROZEN`.
@@ -111,7 +115,7 @@ These are the load-bearing decisions. They belong in `program/00-governance/PPWS
 The pre-allocated files already exist as placeholders under `program/`. The live registry with dependencies and status is `program/PPWS-000-Program-Index.md`. Layers:
 
 - **Governance** (`00-governance/`): canonical charter, decision log, taxonomy, version-control protocol, **AI-agent operating model**.
-- **Foundation** (`01-foundation/`): ontology master (A–O) + Part 1 (A–E, exists) + Part 2 (F–O, to build), variable dictionary, dataset schema, causal/SEM model. **← highest leverage.**
+- **Foundation** (`01-foundation/`): ontology master (A–P) + Part 1 (A–E) + Part 2 (F–P, incl. new Religious & Spiritual J), variable dictionary, dataset schema, causal/SEM model. **← highest leverage.**
 - **Research** (`02-research/`): literature review framework + evidence matrix, research methodology.
 - **Instrument** (`03-instruments/`): questionnaire system master + 9 scale modules + interview guide + validated-scales register/permissions + translation protocol.
 - **Analytics** (`04-analytics/`): scoring manual, synthetic-data framework, SAP, plus reproducible `analysis/*.R` and `synthetic-data/generate_synthetic.R` script stubs.
@@ -135,7 +139,7 @@ The ordering front-loads the work that (a) is pure desk work, (b) de-risks feasi
 - Stand up version-control + the AI-agent operating model (`PPWS-000C`, `PPWS-000D`).
 
 ### Phase 1 — Finish the Foundation Layer (makes everything downstream mechanical)
-- `PPWS-001A-2` **Ontology Domains F–O** — replicate the A–E specification depth for the remaining 10 domains. **This is the single highest-leverage task.**
+- `PPWS-001A-2` **Ontology Domains F–P** — replicate the A–E specification depth for the remaining 11 domains (now incl. the dedicated Religious & Spiritual Ecology domain J). **This is the single highest-leverage task.** *(authored — `DRAFT`)*
 - `PPWS-001B` **Variable Dictionary** — all ~300–500 variables, each tagged CORE vs OPTIONAL.
 - `PPWS-001C` **Dataset Schema** — every column/type/key/derivation; generatable from 001B.
 - `PPWS-001D` **Causal/SEM Specification** — latent constructs, indicators, mediators, moderators, the 2–4 pre-registered confirmatory models, and the DAG.
@@ -165,7 +169,7 @@ The ordering front-loads the work that (a) is pure desk work, (b) de-risks feasi
 
 ### Concrete "first 90 days"
 1. Weeks 1–2: Phase 0 consolidation + sampling honesty statement.
-2. Weeks 2–6: Ontology F–O (`001A-2`) + Variable Dictionary (`001B`).
+2. Weeks 2–6: Ontology F–P (`001A-2`, done) + Variable Dictionary (`001B`).
 3. Weeks 5–8: Dataset Schema (`001C`) + Causal/SEM spec (`001D`) + DAG.
 4. Weeks 6–10: Synthetic data generator + SAP scripts running on mock data.
 5. Weeks 8–12: Literature review draft + concept note to one seed funder + name PI/host.
@@ -230,8 +234,8 @@ Each placeholder in `program/` is authored to these bars. (Lengths follow the ad
 | Document | Must contain | Acceptance criteria | Indicative length |
 |---|---|---|---|
 | `PPWS-001` Charter | Vision, mission, scope, population, cohorts, taxonomy, theories, RQs | One canonical version; SC-approved; no divergence | 15–20 pp |
-| `PPWS-001A` Ontology (master) | Entities, domains, classifications, latent/observed, mediators/moderators, outcomes, causal assumptions, boundaries, cohorts, diagrams | Covers A–O; internally consistent with charter taxonomy | 20–30 pp |
-| `PPWS-001A-2` Domains F–O | Each variable: type, definition, question stem, response format, validation, missing codes, derived indices | Matches the depth/format of existing A–E | — |
+| `PPWS-001A` Ontology (master) | Entities, domains, classifications, latent/observed, mediators/moderators, outcomes, causal assumptions, boundaries, cohorts, diagrams | Covers A–P (incl. Religious & Spiritual J); internally consistent with charter taxonomy | 20–30 pp |
+| `PPWS-001A-2` Domains F–P | Each variable: type, definition, question stem, response format, validation, missing codes, derived indices | Matches the depth/format of existing A–E | — |
 | `PPWS-001B` Variable Dictionary | name, code, type, range, valid values, missing codes, derivation, source scale, domain; CORE/OPTIONAL tag | Every variable specified; resolves duplicates (e.g., NUM_CHILD A14↔D1) | 60–120 pp |
 | `PPWS-001C` Dataset Schema | Every column/type/key/relationship/derivation | Directly generatable from 001B; supports synthetic data | 30–50 pp |
 | `PPWS-001D` Causal/SEM Spec | Latent constructs, indicators, mediators, moderators, 2–4 pre-registered models, DAG | Models identified and powered for N≈2,000 | 20–40 pp |
@@ -258,13 +262,19 @@ Each placeholder in `program/` is authored to these bars. (Lengths follow the ad
 | Literature review absent (no citations) | High | Produce `PPWS-002` before any full proposal |
 | No named PI / host institution | High (for funding) | Secure both before submitting full proposals |
 | SEM over-scoped for N | Medium | 2–4 pre-registered focused models |
-| Ontology only 1/3 complete (A–E of A–O) | Medium | Finish F–O to the A–E standard |
+| Ontology only 1/3 complete (A–E of A–O) | ~~Medium~~ Resolved | F–P authored to the A–E standard (incl. new Religious domain J); now `DRAFT` |
 | 18-month timeline optimistic | Medium | Re-baseline with IRB + translation on critical path |
 | **AI-agent factual risk** (fabricated citations/figures) | High | Human verification gate before any document is `APPROVED` |
 
 ---
 
-## 11. Open questions — please answer (these change the plan materially)
+## 11. Open questions — **RESOLVED** (owner answered 2026-06-06)
+
+> **Status:** All 13 questions answered by the owner and ratified in
+> `program/00-governance/PPWS-000A-Decision-Log.md` (Decisions **D-0001 – D-0010**).
+> The questions are retained below for provenance, each annotated with the
+> resolution. Two scientific choices (flagship hypotheses; N/mode confirmation)
+> remain owner-selectable and are tracked non-blocking in `ontology_review.md`.
 
 You explicitly invited "any and all questions." These are the decisions I cannot make for you; each materially reshapes downstream documents.
 
@@ -286,6 +296,23 @@ You explicitly invited "any and all questions." These are the decisions I cannot
 11. **AI-agent autonomy:** How much should agents auto-produce vs. wait for human sign-off at each gate? Confirm the **"agents draft, humans verify all citations/figures/legal-ethics claims"** rule.
 12. **Output formats:** Markdown-only in this repo, or also exported PDFs/Word for funders and IRB? Any house style/citation format (APA?) to standardize now?
 13. **Placeholder content:** I have created the files as *empty allocated placeholders* (titles + metadata only), per your instruction. Do you want me to now begin **authoring** the highest-leverage documents (start with `PPWS-001A-2` Ontology F–O), or keep everything as scaffolding for now?
+
+### Resolutions (owner answers → decisions)
+| # | Question | Owner's resolution | Decision |
+|---|---|---|---|
+| 1 | Sampling pivot | **Yes** — drop probability sampling; use frame/quota + weighting | D-0001 |
+| 2 | Religious Context | **Own ontology domain** (Domain J), detailed, kept adjacent to culture/identity; full setup | D-0002 |
+| 3 | Flagship models | Owner to **pick from drafted candidates** (H1–H7 in `ontology_review.md`) | OD-1 (open) |
+| 4 | Target N / mode | Default **N≈2,000, online-first** in force until changed | OD-2 (open) |
+| 5 | Languages | **English only** (Urdu/regional deferred) | D-0003 |
+| 6 | Comparative/future waves | **No** male-cohort/longitudinal pre-build; women only | D-0004 |
+| 7 | Funding sources | **International only**; no leads → build a discovery process | D-0005 |
+| 8 | Institutional host | **None yet**; add host-acquisition workstream | D-0006 |
+| 9 | Named PI | **Recruit one** who can also be owner's MS/PhD supervisor | D-0007 |
+| 10 | Budget envelope | **Deferred**; technical bills self-seeded | D-0005 / OD-3 |
+| 11 | AI-agent autonomy | **Fully autonomous**; emit `*_review.md`; verify async (no blocking) | D-0008 |
+| 12 | Output formats | **Markdown only**; APA style; owner ports PDFs/Word manually | D-0009 |
+| 13 | Begin authoring | **Yes** — foundation first; ontology authored, registries tracked | D-0010 |
 
 ---
 

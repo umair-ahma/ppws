@@ -8,19 +8,25 @@
 **Status legend:** `NOT STARTED` · `DRAFT` · `IN REVIEW` · `APPROVED` · `FROZEN`
 **Source legend:** 🟢 substantially exists in `/source` · 🟡 partially exists · 🔴 net-new
 
+> **Taxonomy note (Decision D-0002):** the ontology now spans **16 domains, A–P**,
+> after promoting **Religious & Spiritual Ecology** to its own **Domain J**
+> (Workplace→K, Agency→L, Mental→M, Physical→N, Life Satisfaction→O, Future→P).
+> The Part-2 ontology file is `…F-P` (renamed from `…F-O`). Binding decisions
+> are logged in `00-governance/PPWS-000A-Decision-Log.md`.
+
 ---
 
 ## Foundation Layer (highest leverage — pure desk work, AI-producible now)
 | ID | Document | Path | Depends on | Source | Status |
 |---|---|---|---|---|---|
 | PPWS-001 | Research Charter (canonical) | `00-governance/PPWS-001-Research-Charter.md` | — | 🟢 | NOT STARTED |
-| PPWS-000A | Decision Log | `00-governance/PPWS-000A-Decision-Log.md` | 001 | 🔴 | NOT STARTED |
-| PPWS-000B | Glossary & Unified Domain Taxonomy | `00-governance/PPWS-000B-Glossary-and-Taxonomy.md` | 001, 001A | 🔴 | NOT STARTED |
+| PPWS-000A | Decision Log | `00-governance/PPWS-000A-Decision-Log.md` | 001 | 🔴 | DRAFT |
+| PPWS-000B | Glossary & Unified Domain Taxonomy | `00-governance/PPWS-000B-Glossary-and-Taxonomy.md` | 001, 001A | 🔴 | DRAFT |
 | PPWS-000C | Version Control & Doc Governance | `00-governance/PPWS-000C-Version-Control-Protocol.md` | — | 🔴 | NOT STARTED |
-| PPWS-000D | AI-Agent + In-House Team Operating Model | `00-governance/PPWS-000D-AI-Agent-Operating-Model.md` | 000C | 🔴 | NOT STARTED |
-| PPWS-001A | Measurement Ontology (master, A–O) | `01-foundation/PPWS-001A-Measurement-Ontology.md` | 001 | 🟡 | NOT STARTED |
-| PPWS-001A-1 | Ontology Part 1 — Domains A–E | `01-foundation/PPWS-001A-1-Ontology-Domains-A-E.md` | 001A | 🟢 | NOT STARTED |
-| PPWS-001A-2 | Ontology Part 2 — Domains F–O | `01-foundation/PPWS-001A-2-Ontology-Domains-F-O.md` | 001A-1 | 🔴 | NOT STARTED |
+| PPWS-000D | AI-Agent + In-House Team Operating Model | `00-governance/PPWS-000D-AI-Agent-Operating-Model.md` | 000C | 🔴 | DRAFT |
+| PPWS-001A | Measurement Ontology (master, A–P) | `01-foundation/PPWS-001A-Measurement-Ontology.md` | 001 | 🟡 | DRAFT |
+| PPWS-001A-1 | Ontology Part 1 — Domains A–E | `01-foundation/PPWS-001A-1-Ontology-Domains-A-E.md` | 001A | 🟢 | DRAFT |
+| PPWS-001A-2 | Ontology Part 2 — Domains F–P (incl. new Religious & Spiritual J) | `01-foundation/PPWS-001A-2-Ontology-Domains-F-P.md` | 001A-1 | 🔴 | DRAFT |
 | PPWS-001B | Variable Dictionary | `01-foundation/PPWS-001B-Variable-Dictionary.md` | 001A-2 | 🔴 | NOT STARTED |
 | PPWS-001C | Dataset Schema | `01-foundation/PPWS-001C-Dataset-Schema.md` | 001B | 🔴 | NOT STARTED |
 | PPWS-001D | Causal Model & SEM Specification | `01-foundation/PPWS-001D-Causal-Model-SEM-Specification.md` | 001A-2, 001B | 🟡 | NOT STARTED |
@@ -28,7 +34,7 @@
 ## Research Layer (what funders score)
 | ID | Document | Path | Depends on | Source | Status |
 |---|---|---|---|---|---|
-| PPWS-002 | Literature Review Framework | `02-research/PPWS-002-Literature-Review-Framework.md` | 001, 001D | 🔴 | NOT STARTED |
+| PPWS-002 | Literature Review Framework | `02-research/PPWS-002-Literature-Review-Framework.md` | 001, 001D | 🔴 | DRAFT |
 | PPWS-002A | Literature Evidence Matrix | `02-research/PPWS-002A-Literature-Matrix.md` | 002 | 🔴 | NOT STARTED |
 | PPWS-003 | Research Methodology | `02-research/PPWS-003-Research-Methodology.md` | 001D, 002 | 🟡 | NOT STARTED |
 

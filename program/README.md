@@ -5,7 +5,10 @@ Professional Women Study (PPWS): the complete, pre-allocated document stack that
 turns the blueprint corpus in `/source` into a funded, executable national
 research program.
 
-> Every file here is currently an **allocated placeholder** (`NOT STARTED`).
+> Authoring is **in progress** (foundation-first). Several documents are now
+> `DRAFT` (the Measurement Ontology A–P, governance decision log/taxonomy/operating
+> model, and the literature-review strategy); the remainder are still allocated
+> placeholders (`NOT STARTED`).
 > The build sequence, dependency order, ownership model, and acceptance
 > criteria are defined in the root **[`/initial_plan.md`](../initial_plan.md)**.
 > The live registry of all documents and their status is
@@ -28,7 +31,7 @@ mechanical and largely AI-producible.
 | Folder | Layer | Contents |
 |---|---|---|
 | `00-governance/` | Governance | Canonical charter, decision log, taxonomy, version control, **AI-agent operating model** |
-| `01-foundation/` | Foundation | Measurement ontology (A–O), variable dictionary, dataset schema, causal/SEM model |
+| `01-foundation/` | Foundation | Measurement ontology (A–P, incl. Religious & Spiritual Ecology J), variable dictionary, dataset schema, causal/SEM model |
 | `02-research/` | Research | Literature review framework + matrix, research methodology |
 | `03-instruments/` | Instrument | Questionnaire system, 9 scale modules, interview guide, scales register, translation protocol |
 | `04-analytics/` | Analytics | Scoring manual, synthetic-data framework, SAP + reproducible `analysis/` and `synthetic-data/` scripts |
